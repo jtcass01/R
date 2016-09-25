@@ -39,7 +39,7 @@ c <- a*b  #This approach is faster, it was instant even at 10 million
 
 #De-vectorized approach - THIS TAKES SO MUCH LONGER
   #TEST 1
-d <- rep(NA,N)  #NA stands for null, allocates an empty 100 element vector
+d <- rep(NA,N)  #NA stands for null, allocates an empty N element vector
 for(i in 1:N){
   d[i] <- a[i] * b[i]
 }
